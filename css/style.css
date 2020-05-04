@@ -1,0 +1,40 @@
+.g-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.d-graf {
+    height: 560px;
+    width: 560px;
+    padding: 0;
+}
+
+.d-graf-c {
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin: auto;
+     right: 0;
+     margin: auto;
+     text-align: center;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+     transform: translateY(-50%);
+    }
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-content .h-graf {
+
+}
+
+.flex-content p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

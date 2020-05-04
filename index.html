@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <title>Chart.js</title>
+    </head>
+
+    <body>
+        <div class="container-fuild">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="g-space col-10 align-center">
+                    <canvas class="d-graf" id="doughnutChart"></canvas>
+                    <p class="d-graf-c">xxx</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="g-space col-10">
+                    <div class="flex-content w-100">
+                        <p>目標:<span id="targetValue">xxx</span>円</p>
+                        <canvas class="h-graf" id="horizontalBarChart"></canvas>
+                        <p>達成率<span id="Achievement">xxx</span>%</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="./js/jQuery_v3.5.0.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+        <script type="text/javascript" src="./js/doughnutChart.js"></script>
+    </body>
+
+</html>
