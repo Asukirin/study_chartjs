@@ -1,11 +1,9 @@
+//データラベルプラグイン
 Chart.plugins.unregister(ChartDataLabels);
 
+//ドーナツグラフ
 let members = 50;
 let visitor = 50;
-
-
-var dataLabelPlugin = {};
-
 
 var dctx = document.getElementById('doughnutChart').getContext('2d');
 dctx.canvas.height = 320;
@@ -31,10 +29,16 @@ var doughnutChart = new Chart(dctx, {
             display: true,
             text: 'サポート割合',
             position: 'bottom'
-        }
+        },
+        tooltips: {
+            enabled: false
+        },
+        animation: false
     }
 });
 
+
+// 横棒グラフ
 
 var hctx = document.getElementById('horizontalBarChart').getContext('2d');
 hctx.canvas.height = 80;
@@ -63,8 +67,26 @@ var horizontalBarChart = new Chart(hctx, {
         scales: {
             yAxes: [{ display: false }],
             xAxes: [{ display: false }]
+        },
+        tooltips: {
+            enabled: false
+        },
+        animation: false,
+        plugins: {
+            datalabels: {
+                color: 'blue',
+                labels: {
+                    title: {
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    value: {
+                        color: 'green'
+                    }
+                }
+            }
         }
-    },
-    plugins: [dataLabelPlugin]
+    }
 });
 
